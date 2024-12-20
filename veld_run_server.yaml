@@ -1,0 +1,14 @@
+x-veld:
+  code:
+
+
+services:
+  veld_run_server:
+    build: .
+    command: /veld/code/fuseki-server
+    volumes:
+      - ./data/fuseki_data/:/veld/code/run/
+      - ./data/input/:/veld/input/
+    ports:
+      - 3030:3030
+
