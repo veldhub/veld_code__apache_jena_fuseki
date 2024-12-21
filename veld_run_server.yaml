@@ -8,7 +8,7 @@ services:
     entrypoint: bash /veld/code/src/copy_config.sh
     command: /veld/code/fuseki-server
     volumes:
-      - ./data/fuseki_data/:/veld/code/run/
+      - ./data/fuseki_data/:/veld/storage/
       - ./data/fuseki_config/:/veld/input/config/
     ports:
       - 3030:3030
