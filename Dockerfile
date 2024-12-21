@@ -10,5 +10,4 @@ RUN rm fuseki.tar.gz
 RUN mv apache* code
 WORKDIR /veld/code/
 COPY ./src/ /veld/code/src/
-ENTRYPOINT ["bash", "/veld/code/src/copy_config.sh"]
 

@@ -5,9 +5,9 @@ x-veld:
 services:
   veld_import_rdf:
     build: .
-    command: /veld/code/bin/s-post http://veld_run_server:3030/test3/ default /veld/input/pg21000.rdf
+    command: /veld/code/bin/s-post http://veld_run_server:3030/test3/ default /veld/input/import/pg21000.rdf
     volumes:
-      - ./data/input/:/veld/input/
+      - ./data/input/:/veld/input/import/
     networks:
       - veld_fuseki
 
