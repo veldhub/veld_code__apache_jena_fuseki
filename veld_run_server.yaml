@@ -8,16 +8,9 @@ services:
     command: /veld/code/fuseki-server
     volumes:
       - ./data/fuseki_data/:/veld/code/run/
+      - ./data/fuseki_config/:/veld/input/config/
     ports:
       - 3030:3030
-    networks:
-      - veld_fuseki
-
-  veld_import:
-    build: .
-    command: /veld/code/bin/s-post http://veld_run_server:3030/test3/ default /veld/input/pg21000.rdf
-    volumes:
-      - ./data/input/:/veld/input/
     networks:
       - veld_fuseki
 
