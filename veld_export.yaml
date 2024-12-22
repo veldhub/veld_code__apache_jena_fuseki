@@ -1,0 +1,23 @@
+x-veld:
+  code:
+
+
+services:
+  veld_export:
+    build: .
+    command: bash /veld/code/scripts/export.sh
+    volumes:
+      - ./data/queries/:/veld/input/
+      - ./data/export/:/veld/output/
+    networks:
+      - veld_fuseki
+    environment:
+      in_query_file: null
+      out_file: null
+      fuseki_server_url: http://veld_run_server
+      fuseki_server_port: 3030
+      fuseki_dataset_name: null
+
+networks:
+  veld_fuseki:
+
