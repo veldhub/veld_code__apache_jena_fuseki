@@ -10,5 +10,5 @@ RUN tar -xzf fuseki.tar.gz
 RUN rm fuseki.tar.gz
 RUN mv apache* code
 WORKDIR /veld/code/
-COPY ./scripts/ /veld/code/scripts/
+#COPY ./scripts/ /veld/code/scripts/
 ENV FUSEKI_BASE=/veld/storage/

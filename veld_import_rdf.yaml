@@ -7,6 +7,7 @@ services:
     build: .
     command: bash /veld/code/scripts/import_rdf.sh
     volumes:
+      - ./scripts/:/veld/code/scripts/
       - ./data/input/:/veld/input/
     networks:
       - veld_fuseki
