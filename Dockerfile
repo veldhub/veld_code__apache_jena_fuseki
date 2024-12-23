@@ -12,3 +12,6 @@ RUN mv apache* code
 WORKDIR /veld/code/
 #COPY ./scripts/ /veld/code/scripts/
 ENV FUSEKI_BASE=/veld/storage/
+HEALTHCHECK --interval=10s --timeout=10s --retries=3 \
+  CMD curl --fail http://localhost:3030/ || exit 1
+
