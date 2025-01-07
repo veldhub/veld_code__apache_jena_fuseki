@@ -36,7 +36,7 @@ x-veld:
           information."
       - environment_var: fuseki_graph_uri
         var_type: str
-       description: "Graph URI under which the data is imported to."
+        description: "Graph URI under which the data is imported to."
 
 services:
   veld_import_rdf:
