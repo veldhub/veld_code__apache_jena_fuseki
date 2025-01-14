@@ -29,7 +29,7 @@ docker compose -f <VELD_NAME>.yaml up
 
 ## contained code velds
 
-- **[./veld_run_server.yaml](./veld_run_server.yaml)** 
+**[./veld_run_server.yaml](./veld_run_server.yaml)** 
 
 runs an Apache Fuseki Triplestore server, which can be reached at http://localhost:3030/ . Its 
 configuration is stored in [./data/fuseki_config/](./data/fuseki_config/) and its data at
@@ -40,7 +40,7 @@ other chain or code velds.
 docker compose -f veld_run_server.yaml up
 ```
 
-- **[./veld_import_rdf.yaml](./veld_import_rdf.yaml)** 
+**[./veld_import_rdf.yaml](./veld_import_rdf.yaml)** 
 
 imports XML/RDF data from a given folder.
 
@@ -48,7 +48,7 @@ imports XML/RDF data from a given folder.
 docker compose -f veld_import_rdf.yaml up
 ```
 
-- **[./veld_export.yaml](./veld_export.yaml)** 
+**[./veld_export.yaml](./veld_export.yaml)** 
 
 exports data given rq (sparql query) files (samples can be found in 
 [./data/queries/](./data/queries/)) into supported serializations which are saved into 
