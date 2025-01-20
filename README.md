@@ -1,4 +1,4 @@
-# veld_code__apache_jena_fuseki
+# ![veld chain](https://raw.githubusercontent.com/veldhub/.github/refs/heads/main/images/symbol_V_letter.png) veld_code__apache_jena_fuseki
 
 This repo contains [code velds](https://zenodo.org/records/13322913) for running a stable and 
 reproducible Apache Fuseki triplestore.
